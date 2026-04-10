@@ -20,9 +20,7 @@
             --border: rgba(255, 255, 255, 0.1);
         }
 
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         body {
             background-color: var(--bg-color);
@@ -43,99 +41,46 @@
             width: 100%;
             background: var(--card-bg);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border: 1px solid var(--border);
             padding: 60px;
             border-radius: 24px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
             font-size: 2.5rem;
-            font-weight: 800;
-            margin: 0 0 40px 0;
+            margin-bottom: 40px;
             background: linear-gradient(to right, var(--primary-green), var(--secondary-green));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
         }
 
         h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
+            font-size: 1.2rem;
             color: var(--primary-green);
-            margin-top: 50px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        h2::before {
-            content: "";
-            width: 20px;
-            height: 2px;
-            background: var(--primary-green);
-            margin-right: 15px;
-            border-radius: 2px;
-        }
-
-        p {
-            margin-bottom: 20px;
-            color: var(--text-main);
+            margin-top: 40px;
         }
 
         .address-box {
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid var(--border);
-            padding: 30px;
-            border-radius: 16px;
-            margin: 25px 0;
-            font-style: normal;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
         }
 
-        .address-box strong {
-            color: #fff;
-            font-size: 1.1rem;
-        }
-
-        a {
-            color: var(--secondary-green);
-            text-decoration: none;
-            transition: opacity 0.2s;
-            word-break: break-all;
-        }
-
-        a:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: var(--bg-color); }
-        ::-webkit-scrollbar-thumb { 
-            background: #1a2a24; 
-            border-radius: 5px; 
-        }
-        ::-webkit-scrollbar-thumb:hover { background: var(--primary-green); }
-
-        @media (max-width: 600px) {
-            .container { padding: 30px 20px; border-radius: 0; }
-            h1 { font-size: 1.8rem; }
-            body { padding: 0; }
-        }
+        a { color: var(--secondary-green); text-decoration: none; }
     </style>
 </head>
+
 <body>
 
 <div class="container">
     <h1>Datenschutzerklärung</h1>
 
     <h2>1. Allgemeine Hinweise</h2>
-    <p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie über die Erhebung, Verarbeitung und Nutzung personenbezogener Daten bei der Nutzung dieser Website.</p>
+    <p>Diese Datenschutzerklärung informiert über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten beim Besuch dieser Website gemäß Datenschutz-Grundverordnung (DSGVO).</p>
 
     <h2>2. Verantwortlicher</h2>
-    <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
-
     <div class="address-box">
         <strong>Kerimcan Stoffregen</strong><br>
         Josefplatz 5<br>
@@ -144,24 +89,38 @@
         E-Mail: <a href="mailto:plave.contact@gmail.com">plave.contact@gmail.com</a>
     </div>
 
-    <h2>3. Zugriffsdaten (Server-Logfiles)</h2>
-    <p>Beim Besuch dieser Website werden automatisch Informationen durch den Hosting-Anbieter erfasst. Dies sind z. B. Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage sowie die IP-Adresse. Diese Daten dienen ausschließlich der technischen Überwachung und Sicherheit der Website und werden nicht zur Identifikation von Personen verwendet.</p>
+    <h2>3. Hosting und CDN</h2>
+    <p>Diese Website wird über Cloudflare bereitgestellt. Anbieter ist Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA.</p>
+    <p>Cloudflare fungiert als Content Delivery Network (CDN) und Sicherheitsdienst. Dabei können personenbezogene Daten wie IP-Adressen verarbeitet werden.</p>
+    <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb der Website).</p>
+    <p>Cloudflare ist nach dem EU-U.S. Data Privacy Framework zertifiziert.</p>
 
-    <h2>4. Google Fonts</h2>
-    <p>Diese Website nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Google Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts direkt von den Servern von Google. Dabei wird Ihre IP-Adresse an Google übertragen.</p>
+    <h2>4. Einbindung von Font Awesome</h2>
+    <p>Zur Darstellung von Icons wird Font Awesome über CDN eingebunden. Beim Laden kann eine Verbindung zu Servern in den USA hergestellt werden.</p>
+    <p>Anbieter: Fonticons, Inc., Cambridge, USA.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
 
-    <p>Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+    <h2>5. Lokale Schriftarten</h2>
+    <p>Die verwendeten Schriftarten werden lokal bereitgestellt. Es erfolgt keine Verbindung zu externen Font-Anbietern.</p>
 
-    <p>Weitere Informationen zu Google Fonts finden Sie unter:<br>
-    <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer">https://developers.google.com/fonts/faq</a></p>
+    <h2>6. Server-Logfiles</h2>
+    <p>Beim Aufruf der Website werden automatisch Daten erfasst (z. B. IP-Adresse, Browser, Uhrzeit). Diese dienen ausschließlich der technischen Sicherheit und werden nicht zur Identifikation verwendet.</p>
 
-    <p>Die Nutzung von Google Fonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung unserer Website.</p>
+    <h2>7. Cookies</h2>
+    <p>Diese Website verwendet keine einwilligungspflichtigen Cookies im Sinne von § 25 TTDSG. Ein Cookie-Banner ist daher nicht erforderlich.</p>
 
-    <h2>5. Ihre Rechte</h2>
-    <p>Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Außerdem haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Bei Fragen zur Verarbeitung Ihrer Daten können Sie sich jederzeit an die oben angegebene E-Mail-Adresse wenden.</p>
+    <h2>8. Externe Links</h2>
+    <p>Beim Aufruf externer Links gelten die Datenschutzbestimmungen der jeweiligen Anbieter.</p>
 
-    <h2>6. Änderungen</h2>
-    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.</p>
+    <h2>9. Rechte</h2>
+    <p>Es bestehen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit sowie Widerspruch gemäß DSGVO.</p>
+
+    <h2>10. Beschwerderecht</h2>
+    <p>Es besteht das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.</p>
+
+    <h2>11. Aktualität</h2>
+    <p>Diese Datenschutzerklärung wird bei Bedarf angepasst.</p>
+
 </div>
 
 </body>
