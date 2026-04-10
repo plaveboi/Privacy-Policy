@@ -3,18 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- MAXIMALER INDEX-SCHUTZ -->
-    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
-    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
-    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
-
     <title>Datenschutzerklärung</title>
-
-    <link rel="icon" href="./favicon.png?v=3" type="image/png">
-    <link rel="shortcut icon" href="./favicon.png?v=3" type="image/png">
-    <link rel="apple-touch-icon" href="./favicon.png?v=3">
-
+    <link rel="icon" href="favicon.png" type="image/png">
     <style>
         :root {
             --bg-color: #050a08;
@@ -29,105 +19,165 @@
         * { box-sizing: border-box; }
 
         body {
-            background-color: var(--bg-color);
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(0, 245, 160, 0.05) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(0, 217, 245, 0.05) 0%, transparent 40%);
-            color: var(--text-main);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.8;
             margin: 0;
-            padding: 60px 20px;
-            display: flex;
-            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 850px;
-            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
             background: var(--card-bg);
-            backdrop-filter: blur(10px);
             border: 1px solid var(--border);
-            padding: 60px;
-            border-radius: 24px;
+            border-radius: 18px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-green);
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            background: linear-gradient(to right, var(--primary-green), var(--secondary-green));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            margin-top: 0;
+            font-size: 2.2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
         }
 
         h2 {
-            font-size: 1.2rem;
-            color: var(--primary-green);
-            margin-top: 40px;
+            margin-top: 32px;
+            font-size: 1.35rem;
         }
 
-        .address-box {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border);
-            padding: 25px;
-            border-radius: 12px;
-            margin: 20px 0;
+        p {
+            margin: 14px 0;
+            color: var(--text-main);
         }
 
-        a { color: var(--secondary-green); text-decoration: none; }
+        a {
+            color: var(--secondary-green);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .muted {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
-
 <body>
+    <div class="container">
+        <h1>Datenschutzerklärung</h1>
 
-<div class="container">
-    <h1>Datenschutzerklärung</h1>
+        <h2>1. Allgemeine Hinweise</h2>
+        <p>
+            Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten beim Besuch dieser Website gemäß den geltenden datenschutzrechtlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO).
+        </p>
 
-    <h2>1. Allgemeine Hinweise</h2>
-    <p>Diese Datenschutzerklärung informiert über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten beim Besuch dieser Website gemäß Datenschutz-Grundverordnung (DSGVO).</p>
+        <h2>2. Verantwortlicher</h2>
+        <p>
+            Kerimcan Stoffregen<br>
+            Josefplatz 5<br>
+            40227 Düsseldorf<br>
+            Deutschland
+        </p>
+        <p>
+            E-Mail: ks.kontakt.mail@gmail.com
+        </p>
 
-    <h2>2. Verantwortlicher</h2>
-    <div class="address-box">
-        <strong>Kerimcan Stoffregen</strong><br>
-        Josefplatz 5<br>
-        40227 Düsseldorf<br>
-        Deutschland<br><br>
-        E-Mail: <a href="mailto:ks.kontakt.mail@gmail.com">ks.kontakt.mail@gmail.com</a>
+        <h2>3. Hosting und Auslieferung der Website über Cloudflare</h2>
+        <p>
+            Diese Website wird über Dienste von Cloudflare bereitgestellt. Anbieter ist Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA.
+        </p>
+        <p>
+            Beim Aufruf dieser Website können technisch erforderliche Daten verarbeitet werden, insbesondere die IP-Adresse, Informationen zum verwendeten Browser und Endgerät, Datum und Uhrzeit des Zugriffs, aufgerufene Inhalte sowie Protokolldaten zur Stabilität und Sicherheit der Website.
+        </p>
+        <p>
+            Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der sicheren, stabilen und effizienten Bereitstellung dieser Website.
+        </p>
+        <p>
+            Eine Verarbeitung von Daten in den USA kann dabei nicht ausgeschlossen werden. Cloudflare ist nach dem EU-U.S. Data Privacy Framework zertifiziert.
+        </p>
+
+        <h2>4. Einbindung von Font Awesome über CDN</h2>
+        <p>
+            Diese Website verwendet zur Darstellung von Icons Font Awesome. Die Einbindung erfolgt über das Content Delivery Network cdnjs.cloudflare.com.
+        </p>
+        <p>
+            Beim Laden der entsprechenden Dateien kann eine Verbindung zu Servern von Cloudflare hergestellt werden. Dabei können insbesondere die IP-Adresse sowie technische Verbindungsdaten verarbeitet werden.
+        </p>
+        <p>
+            Die Nutzung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in einer einheitlichen und technisch ordnungsgemäßen Darstellung der Website.
+        </p>
+
+        <h2>5. Lokale Schriftarten und lokal eingebundene Medien</h2>
+        <p>
+            Die auf dieser Website verwendeten Schriftarten werden lokal bereitgestellt. Ebenso werden auf dieser Website eingebundene Medieninhalte wie Bilder und Videos lokal vom eigenen Webspace geladen, soweit sie Teil dieser Website sind.
+        </p>
+        <p>
+            Allein durch das Laden dieser lokal eingebundenen Dateien erfolgt keine zusätzliche Verbindung zu externen Schrift- oder Mediendiensten.
+        </p>
+
+        <h2>6. Server-Logfiles</h2>
+        <p>
+            Beim Besuch dieser Website werden durch den technischen Betrieb der Website automatisch sogenannte Server-Logfiles bzw. Protokolldaten verarbeitet. Dazu können insbesondere IP-Adresse, Browsertyp, Betriebssystem, Referrer-URL, Uhrzeit des Zugriffs und abgerufene Dateien gehören.
+        </p>
+        <p>
+            Diese Verarbeitung erfolgt zur Gewährleistung der Funktionsfähigkeit, Sicherheit und Missbrauchserkennung der Website auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
+        </p>
+
+        <h2>7. Cookies und vergleichbare Technologien</h2>
+        <p>
+            Nach dem aktuellen technischen Stand dieser Website werden keine Cookies oder vergleichbaren Technologien eingesetzt, die eine Einwilligung nach § 25 TDDDG erfordern.
+        </p>
+        <p>
+            Sollte diese Website künftig um einwilligungspflichtige Dienste, insbesondere Analyse-, Marketing- oder Tracking-Technologien, erweitert werden, wird diese Datenschutzerklärung entsprechend angepasst.
+        </p>
+
+        <h2>8. Externe Links</h2>
+        <p>
+            Diese Website enthält Links zu externen Websites und Plattformen, insbesondere zu Social-Media-, Streaming- und Shop-Diensten. Beim Anklicken eines solchen Links verlassen Sie diese Website. Für die Datenverarbeitung auf den verlinkten externen Seiten ist ausschließlich der jeweilige Anbieter verantwortlich.
+        </p>
+
+        <h2>9. Speicherdauer</h2>
+        <p>
+            Personenbezogene Daten werden nur so lange gespeichert, wie dies zur Erreichung der genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. Technische Protokoll- und Sicherheitsdaten werden grundsätzlich nur im Rahmen der Erforderlichkeit gespeichert und anschließend gelöscht oder anonymisiert.
+        </p>
+
+        <h2>10. Ihre Rechte</h2>
+        <p>
+            Sie haben nach den gesetzlichen Vorschriften das Recht auf Auskunft über die Sie betreffenden personenbezogenen Daten, auf Berichtigung unrichtiger Daten, auf Löschung, auf Einschränkung der Verarbeitung, auf Datenübertragbarkeit sowie auf Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten, sofern die gesetzlichen Voraussetzungen vorliegen.
+        </p>
+
+        <h2>11. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+        <p>
+            Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren.
+        </p>
+
+        <h2>12. Aktualität und Änderungen</h2>
+        <p>
+            Diese Datenschutzerklärung wird angepasst, wenn dies aufgrund rechtlicher, technischer oder tatsächlicher Änderungen erforderlich wird.
+        </p>
+
+        <p class="muted">Stand: April 2026</p>
     </div>
-
-    <h2>3. Hosting und CDN</h2>
-    <p>Diese Website wird über Cloudflare bereitgestellt. Anbieter ist Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA.</p>
-    <p>Cloudflare fungiert als Content Delivery Network (CDN) und Sicherheitsdienst. Dabei können personenbezogene Daten wie IP-Adressen verarbeitet werden.</p>
-    <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb der Website).</p>
-    <p>Cloudflare ist nach dem EU-U.S. Data Privacy Framework zertifiziert.</p>
-
-    <h2>4. Einbindung von Font Awesome</h2>
-    <p>Zur Darstellung von Icons wird Font Awesome über CDN eingebunden. Beim Laden kann eine Verbindung zu Servern in den USA hergestellt werden.</p>
-    <p>Anbieter: Fonticons, Inc., Cambridge, USA.</p>
-    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
-
-    <h2>5. Lokale Schriftarten</h2>
-    <p>Die verwendeten Schriftarten werden lokal bereitgestellt. Es erfolgt keine Verbindung zu externen Font-Anbietern.</p>
-
-    <h2>6. Server-Logfiles</h2>
-    <p>Beim Aufruf der Website werden automatisch Daten erfasst (z. B. IP-Adresse, Browser, Uhrzeit). Diese dienen ausschließlich der technischen Sicherheit und werden nicht zur Identifikation verwendet.</p>
-
-    <h2>7. Cookies</h2>
-    <p>Diese Website verwendet keine einwilligungspflichtigen Cookies im Sinne von § 25 TTDSG. Ein Cookie-Banner ist daher nicht erforderlich.</p>
-
-    <h2>8. Externe Links</h2>
-    <p>Beim Aufruf externer Links gelten die Datenschutzbestimmungen der jeweiligen Anbieter.</p>
-
-    <h2>9. Rechte</h2>
-    <p>Es bestehen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit sowie Widerspruch gemäß DSGVO.</p>
-
-    <h2>10. Beschwerderecht</h2>
-    <p>Es besteht das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.</p>
-
-    <h2>11. Aktualität</h2>
-    <p>Diese Datenschutzerklärung wird bei Bedarf angepasst.</p>
-
-</div>
-
 </body>
 </html>
